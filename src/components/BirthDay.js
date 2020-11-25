@@ -9,7 +9,9 @@ const BirthDay = (props) => {
 
   return (
     <>
-      <div className="mb-5">Enter your birthday:</div>
+      <div className="mb-5">
+        <p>Enter your birthday:</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <Field
           name="birthday"
@@ -24,8 +26,7 @@ const BirthDay = (props) => {
           }
           component={renderDatePicker}
         />
-        <div className="d-flex justify-content-between">
-          <div></div>
+        <div className="text-center mt-2">
           <Button
             variant="contained"
             color="primary"

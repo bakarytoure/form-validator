@@ -8,7 +8,9 @@ const Username = (props) => {
   const { handleSubmit, invalid } = props;
   return (
     <>
-      <div className="mb-5">Enter a username</div>
+      <div className="mb-5">
+        <p>Enter a username:</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <Field
           name="username"

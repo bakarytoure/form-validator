@@ -8,7 +8,9 @@ const Zipcode = (props) => {
   const { handleSubmit, invalid } = props;
   return (
     <>
-      <div className="mb-5">Enter a valid zip code(XX-XXX)</div>
+      <div className="mb-5">
+        <p>Enter a valid zip code:(XX-XXX)</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <Field
           name="zip"

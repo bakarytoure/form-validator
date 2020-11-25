@@ -9,7 +9,9 @@ const WizardFormSixPage = (props) => {
   const { handleSubmit, invalid } = props;
   return (
     <>
-      <div className="mb-5">Enter your address:</div>
+      <div className="mb-5">
+        <p>Enter your address:</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <Field
