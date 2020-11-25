@@ -19,16 +19,16 @@ $ npm install
 $ npm start
 
 ```
+## How can you see to data after pressing on send button?
+```In order to see to data after filling correctly all the input fields, you have to open the browser dev tool and look at the output in the console.
+```
 ## Brief description
-the Task constisted of making a form input validation with the help of react: 
-The task was solved by dividing the into many small components. Then with the help of redux-form and also props system
-I was able to the task.
-Below peace of code represente the validation logic for cheking weither the email, password, zip, date are valid or not.
-In order to acheive the validation process, I used the regular expression.
-
-Here is the link for the demo perpose [react-redux-form](https://form-validator-react-redux.netlify.app/)
-
-### validate.js
+the Task consisted of making a form input validation in Reactjs: 
+The task was solved by dividing them into many small components. Then with the help of redux-form,
+I was able to do the task.
+The below piece of code represents the validation logic for checking whether the email, password, zip, or date are valid or not.
+In order to achieve the validation process, I used regular expressions.
+#### validate.js
 ```
 const validate = (values) => {
   const errors = {};
@@ -80,3 +80,4 @@ const validate = (values) => {
 
 export default validate;
 ```
+Here is the link for the demo perpose [react-redux-form](https://form-validator-react-redux.netlify.app/)
