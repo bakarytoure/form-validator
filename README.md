@@ -25,10 +25,10 @@ The task was solved by dividing the into many small components. Then with the he
 I was able to the task.
 Below peace of code represente the validation logic for cheking weither the email, password, zip, date are valid or not.
 In order to acheive the validation process, I used the regular expression.
-```
-Here is the link for the demo perpose https://form-validator-react-redux.netlify.app/
-```
-# validate.js
+
+Here is the link for the demo perpose [react-redux-form](https://form-validator-react-redux.netlify.app/)
+
+### validate.js
 ```
 const validate = (values) => {
   const errors = {};
