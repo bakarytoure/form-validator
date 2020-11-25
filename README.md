@@ -20,9 +20,9 @@ $ npm start
 
 ```
 ## How can you see to data after pressing on send button?
-```
+
 In order to see to data after filling correctly all the input fields, you have to open the browser dev tool and look at the output in the console.
-```
+
 ## Brief description
 the Task consisted of making a form input validation in Reactjs: 
 The task was solved by dividing them into many small components. Then with the help of redux-form,
