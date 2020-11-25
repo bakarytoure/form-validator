@@ -25,7 +25,6 @@ const Zipcode = (props) => {
             variant="contained"
             color="primary"
             type="submit"
-            className="next"
             disabled={invalid}
           >
             Next

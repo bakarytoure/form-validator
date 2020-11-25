@@ -22,7 +22,6 @@ const Password = (props) => {
         <div className="text-center mt-2">
           <Button
             type="submit"
-            className="next"
             variant="contained"
             color="primary"
             disabled={invalid}

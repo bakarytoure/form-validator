@@ -31,7 +31,6 @@ const BirthDay = (props) => {
             variant="contained"
             color="primary"
             type="submit"
-            className="next"
             disabled={invalid}
           >
             Next
