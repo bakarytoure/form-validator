@@ -5,7 +5,7 @@ import ZipCode from "./components/Zipcode";
 import Email from "./components/Email";
 import Address from "./components/Address";
 import City from "./components/City";
-import County from "./components/County";
+import Country from "./components/Country";
 import BirthDay from "./components/BirthDay";
 
 class App extends Component {
@@ -48,7 +48,7 @@ class App extends Component {
           <City previousPage={this.previousPage} onSubmit={this.nextPage} />
         )}
         {page === 7 && (
-          <County previousPage={this.previousPage} onSubmit={this.nextPage} />
+          <Country previousPage={this.previousPage} onSubmit={this.nextPage} />
         )}
         {page === 8 && (
           <Address previousPage={this.previousPage} onSubmit={this.onSubmit} />
