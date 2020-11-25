@@ -19,7 +19,7 @@ $ npm install
 $ npm start
 
 ```
-## How can you see to data after pressing on send button?
+## How can you see the data after pressing on send button?
 
 In order to see to data after filling correctly all the input fields, you have to open the browser dev tool and look at the output in the console.
 
