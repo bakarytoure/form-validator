@@ -8,9 +8,8 @@
 * Redux, React-redux, Redux-Form
 ## Required System
 * Javascript
-## Brief description
-the Task constisted of making a form input validation with the help of react: 
- the
+* ES6
+
 
 ## Setup
 To run this project, install it locally using npm:
@@ -20,6 +19,13 @@ $ npm install
 $ npm start
 
 ```
+## Brief description
+the Task constisted of making a form input validation with the help of react: 
+The task was solved by dividing the into many small components. Then with the help of redux-form and also props system
+I was able to the task.
+Below peace of code represente the validation logic for cheking weither the email, password, zip, date are valid or not.
+In order to acheive the validation process, I used the regular expression.
+
 ```
 const validate = (values) => {
   const errors = {};
