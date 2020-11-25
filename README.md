@@ -24,9 +24,8 @@ $ npm start
 In order to see to data after filling correctly all the input fields, you have to open the browser dev tool and look at the output in the console.
 
 ## Brief description
-the Task consisted of making a form input validation in Reactjs: 
-The task was solved by dividing them into many small components. Then with the help of redux-form,
-I was able to do the task.
+The Task consisted of making a form input validation in Reactjs: 
+It was solved by dividing them into many small components.
 The below piece of code represents the validation logic for checking whether the email, password, zip, or date are valid or not.
 In order to achieve the validation process, I used regular expressions.
 #### validate.js
