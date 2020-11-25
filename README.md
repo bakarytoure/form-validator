@@ -81,4 +81,4 @@ const validate = (values) => {
 
 export default validate;
 ```
-Here is the link for the demo perpose [react-redux-form](https://form-validator-react-redux.netlify.app/)
+Here is the link for the demo purpose: [react redux-form with validation](https://form-validator-react-redux.netlify.app/)
