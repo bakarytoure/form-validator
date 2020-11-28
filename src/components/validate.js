@@ -3,8 +3,8 @@ const validate = (values) => {
   if (!values.username) {
     errors.username = "Required";
   }
-  if (!values.address) {
-    errors.address = "Required";
+  if (!values.address1) {
+    errors.address1 = "Required";
   }
   if (!values.country) {
     errors.country = "Required";
@@ -29,18 +29,18 @@ const validate = (values) => {
     )
   ) {
     errors.password =
-      "At least 8 characters:( min.one number and one special character)";
+      "Invalid password(eg. 8 characters, min. one number and one special character)";
   }
   if (!values.zip) {
     errors.zip = "Required";
   } else if (!/^[a-zA-Z0-9]{2}-[a-zA-Z0-9]{3}$/i.test(values.zip)) {
-    errors.zip = "Invalid zip code(XX-XXX)";
+    errors.zip = "Invalid zipcode(eg. XX-XXX)";
   }
 
   if (!values.email) {
     errors.email = "Required";
   } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(values.email)) {
-    errors.email = "Invalid email address";
+    errors.email = "Invalid E-mail";
   }
 
   return errors;

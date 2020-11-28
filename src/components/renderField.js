@@ -7,9 +7,9 @@ const renderField = ({
   ...custom
 }) => (
   <TextField
+    error={touched && invalid}
     label={label}
     placeholder={label}
-    error={touched && invalid}
     helperText={touched && error}
     {...input}
     {...custom}

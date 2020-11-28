@@ -1,68 +1,38 @@
 import React from "react";
 import { Field, reduxForm } from "redux-form";
 import { Button, Grid, Typography } from "@material-ui/core";
-import validate from "./validate";
-import renderField from "./renderField";
+import validate from "../components/validate";
+import renderField from "../components/renderField";
 
-const MyAddress = (props) => {
+const UserNameAndPassword = (props) => {
   const { handleSubmit, invalid } = props;
   return (
     <form onSubmit={handleSubmit}>
       <Typography variant="h6" gutterBottom>
-        Enter your Addresses
+        Enter your Username and Password
       </Typography>
       <Grid container spacing={3}>
-        <Grid item xs={12}>
+        <Grid item xs={12} sm={6}>
           <Field
-            name="address1"
+            name="username"
             type="text"
             component={renderField}
-            label="Address 1*"
-            variant="outlined"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12}>
-          <Field
-            name="address 2"
-            type="text"
-            component={renderField}
-            label="Address 2"
+            label="Username*"
             variant="outlined"
             fullWidth
           />
         </Grid>
         <Grid item xs={12} sm={6}>
           <Field
-            name="country"
-            type="text"
+            name="password"
+            type="password"
             component={renderField}
-            label="County*"
-            variant="outlined"
-            fullWidth
-          />
-        </Grid>
-        <Grid item xs={12} sm={6}>
-          <Field
-            name="city"
-            type="text"
-            component={renderField}
-            label="City*"
+            label="Password*"
             variant="outlined"
             fullWidth
           />
         </Grid>
 
-        <Grid item xs={12} sm={6}>
-          <Field
-            name="zip"
-            type="text"
-            component={renderField}
-            label="Zipcode*"
-            variant="outlined"
-            fullWidth
-          />
-        </Grid>
         <Grid item xs={12}>
           <Button
             type="submit"
@@ -70,7 +40,7 @@ const MyAddress = (props) => {
             color="primary"
             disabled={invalid}
           >
-            Save
+            Next&gt;&gt;
           </Button>
         </Grid>
       </Grid>
@@ -82,4 +52,4 @@ export default reduxForm({
   destroyOnUnmount: false,
   forceUnregisterOnUnmount: true,
   validate,
-})(MyAddress);
+})(UserNameAndPassword);

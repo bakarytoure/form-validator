@@ -8,7 +8,7 @@ class renderDatePicker extends React.Component {
   };
 
   state = {
-    selectedDate: null,
+    selectedDate: new Date(),
   };
 
   componentWillMount() {
@@ -44,6 +44,7 @@ class renderDatePicker extends React.Component {
           onChange={this.handleChange}
           error={touched && invalid}
           helperText={touched && error}
+          className="datePicker"
         />
       </div>
     );
