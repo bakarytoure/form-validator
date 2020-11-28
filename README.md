@@ -4,7 +4,6 @@
 * Form input validation;
 ## Used libraries: 
 * material-ui
-* bootstrap
 * Redux, React-redux, Redux-Form
 ## Required System
 * Javascript
