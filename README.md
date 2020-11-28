@@ -8,8 +8,6 @@
 ## Required System
 * Javascript
 * ES6
-
-
 ## Setup
 To run this project, install it locally using npm:
 
